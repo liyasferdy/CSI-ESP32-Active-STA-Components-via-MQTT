@@ -1,0 +1,54 @@
+Compiler supported targets: xtensa-esp32-elf
+
+CMake Warning at /root/esp/esp-idf/components/partition_table/project_include.cmake:18 (message):
+  Partition table CSV file
+  /root/esp/esp-idf/examples/ESP32-CSI-Tool/active_sta_mqtt/partitions.csv
+  not found.  Change custom partition CSV path in menuconfig.
+Call Stack (most recent call first):
+  /root/esp/esp-idf/tools/cmake/build.cmake:398 (include)
+  /root/esp/esp-idf/tools/cmake/build.cmake:620 (__build_process_project_includes)
+  /root/esp/esp-idf/tools/cmake/project.cmake:547 (idf_build_process)
+  CMakeLists.txt:8 (project)
+
+
+Traceback (most recent call last):
+  File "/root/esp/esp-idf/components/partition_table/parttool.py", line 358, in <module>
+    main()
+  File "/root/esp/esp-idf/components/partition_table/parttool.py", line 327, in main
+    target = ParttoolTarget(**target_args)
+  File "/root/esp/esp-idf/components/partition_table/parttool.py", line 88, in __init__
+    with open(partition_table_file, 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/root/esp/esp-idf/examples/ESP32-CSI-Tool/active_sta_mqtt/partitions.csv'
+Traceback (most recent call last):
+  File "/root/esp/esp-idf/components/partition_table/parttool.py", line 358, in <module>
+    main()
+  File "/root/esp/esp-idf/components/partition_table/parttool.py", line 327, in main
+    target = ParttoolTarget(**target_args)
+  File "/root/esp/esp-idf/components/partition_table/parttool.py", line 88, in __init__
+    with open(partition_table_file, 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/root/esp/esp-idf/examples/ESP32-CSI-Tool/active_sta_mqtt/partitions.csv'
+Traceback (most recent call last):
+  File "/root/esp/esp-idf/components/partition_table/parttool.py", line 358, in <module>
+    main()
+  File "/root/esp/esp-idf/components/partition_table/parttool.py", line 327, in main
+    target = ParttoolTarget(**target_args)
+  File "/root/esp/esp-idf/components/partition_table/parttool.py", line 88, in __init__
+    with open(partition_table_file, 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/root/esp/esp-idf/examples/ESP32-CSI-Tool/active_sta_mqtt/partitions.csv'
+Traceback (most recent call last):
+  File "/root/esp/esp-idf/components/partition_table/parttool.py", line 358, in <module>
+    main()
+  File "/root/esp/esp-idf/components/partition_table/parttool.py", line 327, in main
+    target = ParttoolTarget(**target_args)
+  File "/root/esp/esp-idf/components/partition_table/parttool.py", line 88, in __init__
+    with open(partition_table_file, 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/root/esp/esp-idf/examples/ESP32-CSI-Tool/active_sta_mqtt/partitions.csv'
+Traceback (most recent call last):
+  File "/root/esp/esp-idf/components/partition_table/parttool.py", line 358, in <module>
+    main()
+  File "/root/esp/esp-idf/components/partition_table/parttool.py", line 327, in main
+    target = ParttoolTarget(**target_args)
+  File "/root/esp/esp-idf/components/partition_table/parttool.py", line 88, in __init__
+    with open(partition_table_file, 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/root/esp/esp-idf/examples/ESP32-CSI-Tool/active_sta_mqtt/partitions.csv'
+ninja: error: '../partitions.csv', needed by 'partition_table/partition-table.bin', missing and no known rule to make it

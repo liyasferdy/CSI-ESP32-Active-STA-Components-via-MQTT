@@ -1,0 +1,163 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3888
+entry 0x40080650
+[0;32mI (31) boot: ESP-IDF v5.1.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 20 2024 09:00:31[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=385e8h (230888) map[0m
+[0;32mI (188) esp_image: segment 1: paddr=00048610 vaddr=3ffb0000 size=03818h ( 14360) load[0m
+[0;32mI (194) esp_image: segment 2: paddr=0004be30 vaddr=40080000 size=041e8h ( 16872) load[0m
+[0;32mI (201) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=c5938h (809272) map[0m
+[0;32mI (494) esp_image: segment 4: paddr=00115960 vaddr=400841e8 size=11510h ( 70928) load[0m
+[0;32mI (535) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (535) boot: Disabling RNG early entropy source...[0m
+[0;32mI (546) cpu_start: Multicore app[0m
+[0;32mI (547) cpu_start: Pro cpu up.[0m
+[0;32mI (547) cpu_start: Starting app cpu, entry point is 0x40081374[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (565) cpu_start: Pro cpu start user code[0m
+[0;32mI (565) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (565) cpu_start: Application information:[0m
+[0;32mI (569) cpu_start: Project name:     active-sta-mqtt[0m
+[0;32mI (575) cpu_start: App version:      cce5b1a-dirty[0m
+[0;32mI (581) cpu_start: Compile time:     May 20 2024 09:00:24[0m
+[0;32mI (587) cpu_start: ELF file SHA256:  084557a3c65a28d0...[0m
+[0;32mI (593) cpu_start: ESP-IDF:          v5.1.1-dirty[0m
+[0;32mI (598) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (603) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (608) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (613) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (620) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (626) heap_init: At 3FFB9528 len 00026AD8 (154 KiB): DRAM[0m
+[0;32mI (632) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (638) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (645) heap_init: At 400956F8 len 0000A908 (42 KiB): IRAM[0m
+[0;32mI (652) spi_flash: detected chip: generic[0m
+[0;32mI (655) spi_flash: flash io: dio[0m
+[0;32mI (663) app_start: Starting scheduler on CPU0[0m
+[0;32mI (664) app_start: Starting scheduler on CPU1[0m
+[0;32mI (664) main_task: Started on CPU0[0m
+[0;32mI (674) main_task: Calling app_main()[0m
+
+
+
+
+
+
+
+
+-----------------------
+ESP32 CSI Tool Settings
+-----------------------
+PROJECT_NAME: ACTIVE_STA
+CONFIG_ESPTOOLPY_MONITOR_BAUD: 115200
+CONFIG_ESP_CONSOLE_UART_BAUDRATE: 115200
+IDF_VER: v5.1.1-dirty
+-----------------------
+WIFI_CHANNEL: 6
+ESP_WIFI_SSID: Aisyah
+ESP_WIFI_PASSWORD: aisyah123
+PACKET_RATE: 100
+SHOULD_COLLECT_CSI: 1
+SHOULD_COLLECT_ONLY_LLTF: 1
+SEND_CSI_TO_SERIAL: 1
+SEND_CSI_TO_SD: 0
+-----------------------
+
+
+
+
+
+
+
+
+I (768) wifi:wifi driver task: 3ffc16f4, prio:23, stack:6656, core=0
+I (796) wifi:wifi firmware version: ce9244d
+I (796) wifi:wifi certification version: v7.0
+I (796) wifi:config NVS flash: enabled
+I (796) wifi:config nano formating: disabled
+I (801) wifi:Init data frame dynamic rx buffer num: 32
+I (805) wifi:Init management frame dynamic rx buffer num: 32
+I (811) wifi:Init management short buffer num: 32
+I (815) wifi:Init dynamic tx buffer num: 32
+I (819) wifi:Init static rx buffer size: 2212
+I (823) wifi:Init static rx buffer num: 10
+I (827) wifi:Init dynamic rx buffer num: 32
+[0;32mI (832) wifi_init: rx ba win: 6[0m
+[0;32mI (835) wifi_init: tcpip mbox: 32[0m
+[0;32mI (839) wifi_init: udp mbox: 6[0m
+[0;32mI (842) wifi_init: tcp mbox: 6[0m
+[0;32mI (846) wifi_init: tcp tx win: 5744[0m
+[0;32mI (850) wifi_init: tcp rx win: 5744[0m
+[0;32mI (854) wifi_init: tcp mss: 1440[0m
+[0;32mI (858) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (863) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (871) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+I (980) wifi:mode : sta (24:62:ab:dc:46:24)
+I (981) wifi:enable tsf
+I (983) wifi:Set ps type: 0, coexist: 0
+
+[0;32mI (987) Active CSI collection (Station): connect to ap SSID:Aisyah password:aisyah123[0m
+type,role,mac,rssi,rate,sig_mode,mcs,bandwidth,smoothing,not_sounding,aggregation,stbc,fec_coding,sgi,noise_floor,ampdu_cnt,channel,secondary_channel,local_timestamp,ant,sig_len,rx_state,real_time_set,real_timestamp,len,CSI_DATA
+[0;32mI (1009) Active CSI collection (Station): Other event id:7[0m
+[0;31mE (1016) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1021) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1027) mqtt_client: Error transport connect[0m
+[0;32mI (1032) Active CSI collection (Station): MQTT_EVENT_ERROR[0m
+[0;31mE (1038) Active CSI collection (Station): Last error reported from esp-tls: 0x8004[0m
+wifi not connected. waiting...
+[0;32mI (1046) Active CSI collection (Station): Last errno string (Success)[0m
+[0;32mI (1056) Active CSI collection (Station): MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (1041) main_task: Returned from app_main()[0m
+wifi not connected. waiting...
+wifi not connected. waiting...
+[0;32mI (3398) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+wifi not connected. waiting...
+[0;32mI (5812) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+wifi not connected. waiting...
+wifi not connected. waiting...
+[0;32mI (8225) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+wifi not connected. waiting...
+[0;32mI (10638) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+[0;32mI (11063) Active CSI collection (Station): Other event id:7[0m
+[0;31mE (11065) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (11066) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (11072) mqtt_client: Error transport connect[0m
+[0;32mI (11077) Active CSI collection (Station): MQTT_EVENT_ERROR[0m
+[0;31mE (11083) Active CSI collection (Station): Last error reported from esp-tls: 0x8004[0m
+[0;32mI (11092) Active CSI collection (Station): Last errno string (Success)[0m
+[0;32mI (11099) Active CSI collection (Station): MQTT_EVENT_DISCONNECTED[0m
+wifi not connected. waiting...
+[0;32mI (13053) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+wifi not connected. waiting...
+wifi not connected. waiting...
+[0;32mI (15466) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+wifi not connected. waiting...
+[0;32mI (17879) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...

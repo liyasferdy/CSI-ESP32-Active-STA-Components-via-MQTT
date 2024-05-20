@@ -1,0 +1,624 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3888
+entry 0x40080650
+[0;32mI (31) boot: ESP-IDF v5.1.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 20 2024 09:00:31[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=385e8h (230888) map[0m
+[0;32mI (188) esp_image: segment 1: paddr=00048610 vaddr=3ffb0000 size=03818h ( 14360) load[0m
+[0;32mI (194) esp_image: segment 2: paddr=0004be30 vaddr=40080000 size=041e8h ( 16872) load[0m
+[0;32mI (201) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=c5938h (809272) map[0m
+[0;32mI (494) esp_image: segment 4: paddr=00115960 vaddr=400841e8 size=11510h ( 70928) load[0m
+[0;32mI (535) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (535) boot: Disabling RNG early entropy source...[0m
+[0;32mI (546) cpu_start: Multicore app[0m
+[0;32mI (547) cpu_start: Pro cpu up.[0m
+[0;32mI (547) cpu_start: Starting app cpu, entry point is 0x40081374[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (565) cpu_start: Pro cpu start user code[0m
+[0;32mI (565) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (565) cpu_start: Application information:[0m
+[0;32mI (569) cpu_start: Project name:     active-sta-mqtt[0m
+[0;32mI (575) cpu_start: App version:      cce5b1a-dirty[0m
+[0;32mI (581) cpu_start: Compile time:     May 20 2024 09:03:29[0m
+[0;32mI (587) cpu_start: ELF file SHA256:  46402411c64be6dc...[0m
+[0;32mI (593) cpu_start: ESP-IDF:          v5.1.1-dirty[0m
+[0;32mI (598) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (603) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (608) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (612) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (620) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (626) heap_init: At 3FFB9528 len 00026AD8 (154 KiB): DRAM[0m
+[0;32mI (632) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (638) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (645) heap_init: At 400956F8 len 0000A908 (42 KiB): IRAM[0m
+[0;32mI (652) spi_flash: detected chip: generic[0m
+[0;32mI (655) spi_flash: flash io: dio[0m
+[0;32mI (663) app_start: Starting scheduler on CPU0[0m
+[0;32mI (664) app_start: Starting scheduler on CPU1[0m
+[0;32mI (664) main_task: Started on CPU0[0m
+[0;32mI (674) main_task: Calling app_main()[0m
+
+
+
+
+
+
+
+
+-----------------------
+ESP32 CSI Tool Settings
+-----------------------
+PROJECT_NAME: ACTIVE_STA
+CONFIG_ESPTOOLPY_MONITOR_BAUD: 115200
+CONFIG_ESP_CONSOLE_UART_BAUDRATE: 115200
+IDF_VER: v5.1.1-dirty
+-----------------------
+WIFI_CHANNEL: 6
+ESP_WIFI_SSID: liyas ferdy
+ESP_WIFI_PASSWORD: telor ayam
+PACKET_RATE: 100
+SHOULD_COLLECT_CSI: 1
+SHOULD_COLLECT_ONLY_LLTF: 1
+SEND_CSI_TO_SERIAL: 1
+SEND_CSI_TO_SD: 0
+-----------------------
+
+
+
+
+
+
+
+
+I (768) wifi:wifi driver task: 3ffc16f4, prio:23, stack:6656, core=0
+I (796) wifi:wifi firmware version: ce9244d
+I (796) wifi:wifi certification version: v7.0
+I (796) wifi:config NVS flash: enabled
+I (796) wifi:config nano formating: disabled
+I (800) wifi:Init data frame dynamic rx buffer num: 32
+I (805) wifi:Init management frame dynamic rx buffer num: 32
+I (810) wifi:Init management short buffer num: 32
+I (815) wifi:Init dynamic tx buffer num: 32
+I (819) wifi:Init static rx buffer size: 2212
+I (823) wifi:Init static rx buffer num: 10
+I (827) wifi:Init dynamic rx buffer num: 32
+[0;32mI (832) wifi_init: rx ba win: 6[0m
+[0;32mI (834) wifi_init: tcpip mbox: 32[0m
+[0;32mI (838) wifi_init: udp mbox: 6[0m
+[0;32mI (842) wifi_init: tcp mbox: 6[0m
+[0;32mI (846) wifi_init: tcp tx win: 5744[0m
+[0;32mI (850) wifi_init: tcp rx win: 5744[0m
+[0;32mI (854) wifi_init: tcp mss: 1440[0m
+[0;32mI (858) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (863) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (898) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+I (1006) wifi:mode : sta (24:62:ab:dc:46:24)
+I (1007) wifi:enable tsf
+I (1010) wifi:Set ps type: 0, coexist: 0
+
+[0;32mI (1013) Active CSI collection (Station): connect to ap SSID:liyas ferdy password:telor ayam[0m
+type,role,mac,rssi,rate,sig_mode,mcs,bandwidth,smoothing,not_sounding,aggregation,stbc,fec_coding,sgi,noise_floor,ampdu_cnt,channel,secondary_channel,local_timestamp,ant,sig_len,rx_state,real_time_set,real_timestamp,len,CSI_DATA
+I (1020) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (1042) wifi:state: init -> auth (b0)
+[0;32mI (1623) Active CSI collection (Station): Other event id:7[0m
+[0;31mE (1625) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1626) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1632) mqtt_client: Error transport connect[0m
+wifi not connected. waiting...
+[0;32mI (1637) Active CSI collection (Station): MQTT_EVENT_ERROR[0m
+[0;31mE (1645) Active CSI collection (Station): Last error reported from esp-tls: 0x8004[0m
+[0;32mI (1654) Active CSI collection (Station): Last errno string (Success)[0m
+[0;32mI (1661) Active CSI collection (Station): MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (1636) main_task: Returned from app_main()[0m
+I (2175) wifi:state: auth -> init (600)
+I (2186) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (2188) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+wifi not connected. waiting...
+[0;32mI (4602) Active CSI collection (Station): Retry connecting to the AP[0m
+I (4612) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (4614) wifi:state: init -> auth (b0)
+wifi not connected. waiting...
+I (5190) wifi:state: auth -> init (600)
+I (5195) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (5197) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+wifi not connected. waiting...
+[0;32mI (7611) Active CSI collection (Station): Retry connecting to the AP[0m
+I (7620) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (7622) wifi:state: init -> auth (b0)
+wifi not connected. waiting...
+wifi not connected. waiting...
+I (8751) wifi:state: auth -> init (600)
+I (8756) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (8758) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+wifi not connected. waiting...
+[0;32mI (11172) Active CSI collection (Station): Retry connecting to the AP[0m
+I (11230) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (11231) wifi:state: init -> auth (b0)
+wifi not connected. waiting...
+[0;32mI (11669) Active CSI collection (Station): Other event id:7[0m
+[0;31mE (11672) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (11673) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (11678) mqtt_client: Error transport connect[0m
+[0;32mI (11683) Active CSI collection (Station): MQTT_EVENT_ERROR[0m
+[0;31mE (11690) Active CSI collection (Station): Last error reported from esp-tls: 0x8004[0m
+[0;32mI (11698) Active CSI collection (Station): Last errno string (Success)[0m
+[0;32mI (11705) Active CSI collection (Station): MQTT_EVENT_DISCONNECTED[0m
+I (12362) wifi:state: auth -> init (600)
+I (12368) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (12370) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+CSI_DATA,STA,F4:2D:06:92:69:C4,-54,0,0,0,0,0,0,0,0,0,0,-96,0,4,0,11838659,0,267,0,0,12.3383,64,[11 -79 16 0 0 -2 0 -2 1 -2 1 -3 2 -1 0 2 -3 -1 -8 -2 -21 -26 -28 -64 -22 -46 -18 -12 -12 -2 -4 0 -3 -1 -3 -1 -3 0 -1 -1 0 -1 0 0 -1 0 -2 0 -1 0 0 0 0 -1 0 -1 0 0 0 0 0 0 0 0 11 -79 16 0 -128 0 0 0 -1 -1 -1 -1 -1 -1 -12 45 6 -110 105 -60 -12 45 6 -110 105 -60 80 16 -66 -111 -108 -16 -23 0 0 0 100 0 49 28 0 10 107 97 108 97 107 32 107 97 114 111 1 8 -126 -124 -117 -106 18 36 72 108 3 1 ]
+wifi not connected. waiting...
+wifi not connected. waiting...
+[0;32mI (14785) Active CSI collection (Station): Retry connecting to the AP[0m
+I (14794) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (14796) wifi:state: init -> auth (b0)
+I (15371) wifi:state: auth -> init (600)
+I (15377) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (15379) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+wifi not connected. waiting...
+wifi not connected. waiting...
+[0;32mI (17793) Active CSI collection (Station): Retry connecting to the AP[0m
+I (17805) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (17807) wifi:state: init -> auth (b0)
+wifi not connected. waiting...
+I (18945) wifi:state: auth -> init (600)
+I (18951) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (18952) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+wifi not connected. waiting...
+[0;32mI (21366) Active CSI collection (Station): Retry connecting to the AP[0m
+I (21375) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (21377) wifi:state: init -> auth (b0)
+wifi not connected. waiting...
+[0;32mI (21713) Active CSI collection (Station): Other event id:7[0m
+[0;31mE (21714) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (21715) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (21721) mqtt_client: Error transport connect[0m
+[0;32mI (21727) Active CSI collection (Station): MQTT_EVENT_ERROR[0m
+[0;31mE (21733) Active CSI collection (Station): Last error reported from esp-tls: 0x8004[0m
+[0;32mI (21741) Active CSI collection (Station): Last errno string (Success)[0m
+[0;32mI (21748) Active CSI collection (Station): MQTT_EVENT_DISCONNECTED[0m
+I (21954) wifi:state: auth -> init (600)
+I (21959) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (21961) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+wifi not connected. waiting...
+[0;32mI (24375) Active CSI collection (Station): Retry connecting to the AP[0m
+I (24384) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (24386) wifi:state: init -> auth (b0)
+wifi not connected. waiting...
+I (25515) wifi:state: auth -> init (600)
+I (25521) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (25523) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+wifi not connected. waiting...
+wifi not connected. waiting...
+[0;32mI (27937) Active CSI collection (Station): Retry connecting to the AP[0m
+I (27946) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (27948) wifi:state: init -> auth (b0)
+I (28523) wifi:state: auth -> init (600)
+I (28529) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (28530) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+wifi not connected. waiting...
+wifi not connected. waiting...
+[0;32mI (30944) Active CSI collection (Station): Retry connecting to the AP[0m
+I (30953) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (30955) wifi:state: init -> auth (b0)
+wifi not connected. waiting...
+[0;32mI (31756) Active CSI collection (Station): Other event id:7[0m
+[0;31mE (31758) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (31758) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (31764) mqtt_client: Error transport connect[0m
+[0;32mI (31770) Active CSI collection (Station): MQTT_EVENT_ERROR[0m
+[0;31mE (31776) Active CSI collection (Station): Last error reported from esp-tls: 0x8004[0m
+[0;32mI (31784) Active CSI collection (Station): Last errno string (Success)[0m
+[0;32mI (31791) Active CSI collection (Station): MQTT_EVENT_DISCONNECTED[0m
+I (32088) wifi:state: auth -> init (600)
+I (32093) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (32095) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+wifi not connected. waiting...
+[0;32mI (34509) Active CSI collection (Station): Retry connecting to the AP[0m
+I (34524) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (34525) wifi:state: init -> auth (b0)
+wifi not connected. waiting...
+I (35101) wifi:state: auth -> init (600)
+I (35107) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (35108) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+wifi not connected. waiting...
+[0;32mI (37522) Active CSI collection (Station): Retry connecting to the AP[0m
+I (37531) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (37533) wifi:state: init -> auth (b0)
+wifi not connected. waiting...
+I (38662) wifi:state: auth -> init (600)
+I (38668) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (38669) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+wifi not connected. waiting...
+wifi not connected. waiting...
+[0;32mI (41084) Active CSI collection (Station): Retry connecting to the AP[0m
+I (41093) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (41095) wifi:state: init -> auth (b0)
+I (41670) wifi:state: auth -> init (600)
+I (41675) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (41677) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+[0;32mI (41798) Active CSI collection (Station): Other event id:7[0m
+[0;31mE (41800) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (41802) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (41807) mqtt_client: Error transport connect[0m
+[0;32mI (41812) Active CSI collection (Station): MQTT_EVENT_ERROR[0m
+[0;31mE (41818) Active CSI collection (Station): Last error reported from esp-tls: 0x8004[0m
+[0;32mI (41827) Active CSI collection (Station): Last errno string (Success)[0m
+[0;32mI (41834) Active CSI collection (Station): MQTT_EVENT_DISCONNECTED[0m
+wifi not connected. waiting...
+wifi not connected. waiting...
+[0;32mI (44092) Active CSI collection (Station): Retry connecting to the AP[0m
+I (44102) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (44104) wifi:state: init -> auth (b0)
+wifi not connected. waiting...
+I (45234) wifi:state: auth -> init (600)
+I (45239) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (45241) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+wifi not connected. waiting...
+[0;32mI (47655) Active CSI collection (Station): Retry connecting to the AP[0m
+I (47664) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (47666) wifi:state: init -> auth (b0)
+wifi not connected. waiting...
+I (48241) wifi:state: auth -> init (600)
+I (48247) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (48248) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+wifi not connected. waiting...
+[0;32mI (50663) Active CSI collection (Station): Retry connecting to the AP[0m
+I (50672) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (50674) wifi:state: init -> auth (b0)
+wifi not connected. waiting...
+wifi not connected. waiting...
+I (51804) wifi:state: auth -> init (600)
+I (51809) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (51811) Active CSI collection (Station): Retry connecting to the AP[0m
+[0;32mI (51841) Active CSI collection (Station): Other event id:7[0m
+[0;31mE (51843) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (51844) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (51850) mqtt_client: Error transport connect[0m
+[0;32mI (51855) Active CSI collection (Station): MQTT_EVENT_ERROR[0m
+[0;31mE (51861) Active CSI collection (Station): Last error reported from esp-tls: 0x8004[0m
+[0;32mI (51870) Active CSI collection (Station): Last errno string (Success)[0m
+[0;32mI (51877) Active CSI collection (Station): MQTT_EVENT_DISCONNECTED[0m
+wifi not connected. waiting...
+wifi not connected. waiting...
+[0;32mI (54226) Active CSI collection (Station): Retry connecting to the AP[0m
+I (54246) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (54248) wifi:state: init -> auth (b0)
+wifi not connected. waiting...
+I (54823) wifi:state: auth -> init (600)
+I (54828) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (54830) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+wifi not connected. waiting...
+[0;32mI (57244) Active CSI collection (Station): Retry connecting to the AP[0m
+I (57253) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (57255) wifi:state: init -> auth (b0)
+wifi not connected. waiting...
+I (58383) wifi:state: auth -> init (600)
+I (58388) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (58390) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+wifi not connected. waiting...
+wifi not connected. waiting...
+[0;32mI (60804) Active CSI collection (Station): Retry connecting to the AP[0m
+I (60813) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (60815) wifi:state: init -> auth (b0)
+I (61390) wifi:state: auth -> init (600)
+I (61396) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (61397) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+[0;32mI (61885) Active CSI collection (Station): Other event id:7[0m
+[0;31mE (61888) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (61889) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (61894) mqtt_client: Error transport connect[0m
+[0;32mI (61899) Active CSI collection (Station): MQTT_EVENT_ERROR[0m
+[0;31mE (61906) Active CSI collection (Station): Last error reported from esp-tls: 0x8004[0m
+[0;32mI (61914) Active CSI collection (Station): Last errno string (Success)[0m
+[0;32mI (61921) Active CSI collection (Station): MQTT_EVENT_DISCONNECTED[0m
+wifi not connected. waiting...
+wifi not connected. waiting...
+[0;32mI (63812) Active CSI collection (Station): Retry connecting to the AP[0m
+I (63821) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (63823) wifi:state: init -> auth (b0)
+wifi not connected. waiting...
+I (64954) wifi:state: auth -> init (600)
+I (64960) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (64961) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+wifi not connected. waiting...
+[0;32mI (67376) Active CSI collection (Station): Retry connecting to the AP[0m
+I (67385) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (67386) wifi:state: init -> auth (b0)
+wifi not connected. waiting...
+I (67962) wifi:state: auth -> init (600)
+I (67967) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (67969) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+wifi not connected. waiting...
+[0;32mI (70383) Active CSI collection (Station): Retry connecting to the AP[0m
+I (70392) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (70394) wifi:state: init -> auth (b0)
+wifi not connected. waiting...
+I (71521) wifi:state: auth -> init (600)
+I (71527) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (71529) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+[0;32mI (71928) Active CSI collection (Station): Other event id:7[0m
+[0;31mE (71930) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (71931) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (71937) mqtt_client: Error transport connect[0m
+[0;32mI (71942) Active CSI collection (Station): MQTT_EVENT_ERROR[0m
+[0;31mE (71948) Active CSI collection (Station): Last error reported from esp-tls: 0x8004[0m
+[0;32mI (71957) Active CSI collection (Station): Last errno string (Success)[0m
+[0;32mI (71964) Active CSI collection (Station): MQTT_EVENT_DISCONNECTED[0m
+wifi not connected. waiting...
+wifi not connected. waiting...
+[0;32mI (73944) Active CSI collection (Station): Retry connecting to the AP[0m
+I (73953) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (73955) wifi:state: init -> auth (b0)
+I (74530) wifi:state: auth -> init (600)
+I (74536) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (74538) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+wifi not connected. waiting...
+wifi not connected. waiting...
+[0;32mI (76952) Active CSI collection (Station): Retry connecting to the AP[0m
+I (76961) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (76963) wifi:state: init -> auth (b0)
+wifi not connected. waiting...
+I (78091) wifi:state: auth -> init (600)
+I (78097) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (78099) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+wifi not connected. waiting...
+[0;32mI (80513) Active CSI collection (Station): Retry connecting to the AP[0m
+I (80522) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (80524) wifi:state: init -> auth (b0)
+wifi not connected. waiting...
+I (81099) wifi:state: auth -> init (600)
+I (81105) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (81106) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+[0;32mI (81972) Active CSI collection (Station): Other event id:7[0m
+[0;31mE (81974) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (81975) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (81981) mqtt_client: Error transport connect[0m
+[0;32mI (81986) Active CSI collection (Station): MQTT_EVENT_ERROR[0m
+[0;31mE (81992) Active CSI collection (Station): Last error reported from esp-tls: 0x8004[0m
+[0;32mI (82001) Active CSI collection (Station): Last errno string (Success)[0m
+[0;32mI (82008) Active CSI collection (Station): MQTT_EVENT_DISCONNECTED[0m
+wifi not connected. waiting...
+[0;32mI (83522) Active CSI collection (Station): Retry connecting to the AP[0m
+I (83531) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (83533) wifi:state: init -> auth (b0)
+wifi not connected. waiting...
+I (84662) wifi:state: auth -> init (600)
+I (84667) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (84669) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+wifi not connected. waiting...
+wifi not connected. waiting...
+[0;32mI (87083) Active CSI collection (Station): Retry connecting to the AP[0m
+I (87092) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (87094) wifi:state: init -> auth (b0)
+I (87669) wifi:state: auth -> init (600)
+I (87674) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (87676) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+wifi not connected. waiting...
+wifi not connected. waiting...
+[0;32mI (90090) Active CSI collection (Station): Retry connecting to the AP[0m
+I (90099) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (90101) wifi:state: init -> auth (b0)
+wifi not connected. waiting...
+I (91231) wifi:state: auth -> init (600)
+I (91237) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (91239) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+[0;32mI (92015) Active CSI collection (Station): Other event id:7[0m
+[0;31mE (92017) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (92018) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (92024) mqtt_client: Error transport connect[0m
+[0;32mI (92029) Active CSI collection (Station): MQTT_EVENT_ERROR[0m
+[0;31mE (92035) Active CSI collection (Station): Last error reported from esp-tls: 0x8004[0m
+[0;32mI (92044) Active CSI collection (Station): Last errno string (Success)[0m
+[0;32mI (92051) Active CSI collection (Station): MQTT_EVENT_DISCONNECTED[0m
+wifi not connected. waiting...
+[0;32mI (93654) Active CSI collection (Station): Retry connecting to the AP[0m
+I (93663) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (93665) wifi:state: init -> auth (b0)
+wifi not connected. waiting...
+I (94240) wifi:state: auth -> init (600)
+I (94246) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (94248) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+wifi not connected. waiting...
+[0;32mI (96662) Active CSI collection (Station): Retry connecting to the AP[0m
+I (96671) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (96673) wifi:state: init -> auth (b0)
+wifi not connected. waiting...
+wifi not connected. waiting...
+I (97803) wifi:state: auth -> init (600)
+I (97808) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (97810) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+wifi not connected. waiting...
+[0;32mI (100224) Active CSI collection (Station): Retry connecting to the AP[0m
+I (100233) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (100235) wifi:state: init -> auth (b0)
+wifi not connected. waiting...
+I (100811) wifi:state: auth -> init (600)
+I (100817) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (100818) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+[0;32mI (102059) Active CSI collection (Station): Other event id:7[0m
+[0;31mE (102061) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (102062) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (102068) mqtt_client: Error transport connect[0m
+[0;32mI (102074) Active CSI collection (Station): MQTT_EVENT_ERROR[0m
+[0;31mE (102080) Active CSI collection (Station): Last error reported from esp-tls: 0x8004[0m
+[0;32mI (102088) Active CSI collection (Station): Last errno string (Success)[0m
+[0;32mI (102096) Active CSI collection (Station): MQTT_EVENT_DISCONNECTED[0m
+wifi not connected. waiting...
+[0;32mI (103234) Active CSI collection (Station): Retry connecting to the AP[0m
+I (103243) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (103245) wifi:state: init -> auth (b0)
+wifi not connected. waiting...
+I (104374) wifi:state: auth -> init (600)
+I (104379) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (104381) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+wifi not connected. waiting...
+wifi not connected. waiting...
+[0;32mI (106795) Active CSI collection (Station): Retry connecting to the AP[0m
+I (106804) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (106806) wifi:state: init -> auth (b0)
+I (107382) wifi:state: auth -> init (600)
+I (107387) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (107389) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+wifi not connected. waiting...
+wifi not connected. waiting...
+[0;32mI (109803) Active CSI collection (Station): Retry connecting to the AP[0m
+I (109812) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (109814) wifi:state: init -> auth (b0)
+wifi not connected. waiting...
+I (110945) wifi:state: auth -> init (600)
+I (110950) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (110952) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+[0;32mI (112103) Active CSI collection (Station): Other event id:7[0m
+[0;31mE (112105) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (112106) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (112112) mqtt_client: Error transport connect[0m
+[0;32mI (112118) Active CSI collection (Station): MQTT_EVENT_ERROR[0m
+[0;31mE (112124) Active CSI collection (Station): Last error reported from esp-tls: 0x8004[0m
+[0;32mI (112132) Active CSI collection (Station): Last errno string (Success)[0m
+[0;32mI (112140) Active CSI collection (Station): MQTT_EVENT_DISCONNECTED[0m
+wifi not connected. waiting...
+[0;32mI (113368) Active CSI collection (Station): Retry connecting to the AP[0m
+I (113377) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (113379) wifi:state: init -> auth (b0)
+wifi not connected. waiting...
+I (113954) wifi:state: auth -> init (600)
+I (113960) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (113961) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+wifi not connected. waiting...
+[0;32mI (116376) Active CSI collection (Station): Retry connecting to the AP[0m
+I (116385) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (116387) wifi:state: init -> auth (b0)
+wifi not connected. waiting...
+I (117517) wifi:state: auth -> init (600)
+I (117523) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (117525) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+wifi not connected. waiting...
+wifi not connected. waiting...
+[0;32mI (119939) Active CSI collection (Station): Retry connecting to the AP[0m
+I (119948) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (119950) wifi:state: init -> auth (b0)
+I (120526) wifi:state: auth -> init (600)
+I (120531) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (120533) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+wifi not connected. waiting...
+[0;32mI (122147) Active CSI collection (Station): Other event id:7[0m
+[0;31mE (122149) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (122150) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (122156) mqtt_client: Error transport connect[0m
+[0;32mI (122162) Active CSI collection (Station): MQTT_EVENT_ERROR[0m
+[0;31mE (122168) Active CSI collection (Station): Last error reported from esp-tls: 0x8004[0m
+[0;32mI (122176) Active CSI collection (Station): Last errno string (Success)[0m
+[0;32mI (122184) Active CSI collection (Station): MQTT_EVENT_DISCONNECTED[0m
+wifi not connected. waiting...
+[0;32mI (122948) Active CSI collection (Station): Retry connecting to the AP[0m
+I (122957) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (122959) wifi:state: init -> auth (b0)
+wifi not connected. waiting...
+I (124088) wifi:state: auth -> init (600)
+I (124094) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (124095) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+wifi not connected. waiting...
+[0;32mI (126510) Active CSI collection (Station): Retry connecting to the AP[0m
+I (126519) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (126521) wifi:state: init -> auth (b0)
+wifi not connected. waiting...
+I (127096) wifi:state: auth -> init (600)
+I (127102) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (127103) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+wifi not connected. waiting...
+[0;32mI (129518) Active CSI collection (Station): Retry connecting to the AP[0m
+I (129527) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (129529) wifi:state: init -> auth (b0)
+wifi not connected. waiting...
+I (130658) wifi:state: auth -> init (600)
+I (130664) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (130666) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+wifi not connected. waiting...
+[0;32mI (132190) Active CSI collection (Station): Other event id:7[0m
+[0;31mE (132192) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (132193) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (132199) mqtt_client: Error transport connect[0m
+[0;32mI (132205) Active CSI collection (Station): MQTT_EVENT_ERROR[0m
+[0;31mE (132211) Active CSI collection (Station): Last error reported from esp-tls: 0x8004[0m
+[0;32mI (132219) Active CSI collection (Station): Last errno string (Success)[0m
+[0;32mI (132227) Active CSI collection (Station): MQTT_EVENT_DISCONNECTED[0m
+wifi not connected. waiting...
+[0;32mI (133081) Active CSI collection (Station): Retry connecting to the AP[0m
+I (133090) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (133092) wifi:state: init -> auth (b0)
+I (133668) wifi:state: auth -> init (600)
+I (133673) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (133675) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+wifi not connected. waiting...
+wifi not connected. waiting...
+[0;32mI (136090) Active CSI collection (Station): Retry connecting to the AP[0m
+I (136099) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (136101) wifi:state: init -> auth (b0)
+wifi not connected. waiting...
+I (137230) wifi:state: auth -> init (600)
+I (137236) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (137237) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+wifi not connected. waiting...

@@ -1,0 +1,196 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3888
+entry 0x40080650
+[0;32mI (31) boot: ESP-IDF v5.1.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 20 2024 09:19:07[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=3a1a4h (237988) map[0m
+[0;32mI (190) esp_image: segment 1: paddr=0004a1cc vaddr=3ffb0000 size=03828h ( 14376) load[0m
+[0;32mI (196) esp_image: segment 2: paddr=0004d9fc vaddr=40080000 size=0261ch (  9756) load[0m
+[0;32mI (201) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=c7788h (817032) map[0m
+[0;32mI (499) esp_image: segment 4: paddr=001177b0 vaddr=4008261c size=1314ch ( 78156) load[0m
+[0;32mI (543) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (543) boot: Disabling RNG early entropy source...[0m
+[0;32mI (554) cpu_start: Multicore app[0m
+[0;32mI (555) cpu_start: Pro cpu up.[0m
+[0;32mI (555) cpu_start: Starting app cpu, entry point is 0x40081374[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (573) cpu_start: Pro cpu start user code[0m
+[0;32mI (573) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (573) cpu_start: Application information:[0m
+[0;32mI (578) cpu_start: Project name:     active-sta-mqtt[0m
+[0;32mI (583) cpu_start: App version:      cce5b1a-dirty[0m
+[0;32mI (589) cpu_start: Compile time:     May 20 2024 10:04:31[0m
+[0;32mI (595) cpu_start: ELF file SHA256:  4fe566942c4e1ca1...[0m
+[0;32mI (601) cpu_start: ESP-IDF:          v5.1.1-dirty[0m
+[0;32mI (606) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (611) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (616) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (621) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (628) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (634) heap_init: At 3FFB9568 len 00026A98 (154 KiB): DRAM[0m
+[0;32mI (640) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (646) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (653) heap_init: At 40095768 len 0000A898 (42 KiB): IRAM[0m
+[0;32mI (660) spi_flash: detected chip: generic[0m
+[0;32mI (664) spi_flash: flash io: dio[0m
+[0;32mI (671) app_start: Starting scheduler on CPU0[0m
+[0;32mI (673) app_start: Starting scheduler on CPU1[0m
+[0;32mI (673) main_task: Started on CPU0[0m
+[0;32mI (683) main_task: Calling app_main()[0m
+
+
+
+
+
+
+
+
+-----------------------
+ESP32 CSI Tool Settings
+-----------------------
+PROJECT_NAME: ACTIVE_STA
+CONFIG_ESPTOOLPY_MONITOR_BAUD: 115200
+CONFIG_ESP_CONSOLE_UART_BAUDRATE: 115200
+IDF_VER: v5.1.1-dirty
+-----------------------
+WIFI_CHANNEL: 6
+ESP_WIFI_SSID: liyas ferdy
+ESP_WIFI_PASSWORD: telorayam
+PACKET_RATE: 100
+SHOULD_COLLECT_CSI: 1
+SHOULD_COLLECT_ONLY_LLTF: 1
+SEND_CSI_TO_SERIAL: 1
+SEND_CSI_TO_SD: 0
+-----------------------
+
+
+
+
+
+
+
+
+I (777) wifi:wifi driver task: 3ffc1788, prio:23, stack:6656, core=0
+I (805) wifi:wifi firmware version: ce9244d
+I (805) wifi:wifi certification version: v7.0
+I (805) wifi:config NVS flash: enabled
+I (805) wifi:config nano formating: disabled
+I (810) wifi:Init data frame dynamic rx buffer num: 32
+I (814) wifi:Init management frame dynamic rx buffer num: 32
+I (820) wifi:Init management short buffer num: 32
+I (824) wifi:Init dynamic tx buffer num: 32
+I (828) wifi:Init static rx buffer size: 2212
+I (832) wifi:Init static rx buffer num: 10
+I (836) wifi:Init dynamic rx buffer num: 32
+[0;32mI (841) wifi_init: rx ba win: 6[0m
+[0;32mI (844) wifi_init: tcpip mbox: 32[0m
+[0;32mI (847) wifi_init: udp mbox: 6[0m
+[0;32mI (851) wifi_init: tcp mbox: 6[0m
+[0;32mI (855) wifi_init: tcp tx win: 5744[0m
+[0;32mI (859) wifi_init: tcp rx win: 5744[0m
+[0;32mI (863) wifi_init: tcp mss: 1440[0m
+[0;32mI (867) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (872) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (904) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+I (1010) wifi:mode : sta (24:62:ab:dc:46:24)
+I (1011) wifi:enable tsf
+I (1014) wifi:Set ps type: 0, coexist: 0
+
+[0;32mI (1017) Active CSI collection (Station): connect to ap SSID:liyas ferdy password:telorayam[0m
+type,role,mac,rssi,rate,sig_mode,mcs,bandwidth,smoothing,not_sounding,aggregation,stbc,fec_coding,sgi,noise_floor,ampdu_cnt,channel,secondary_channel,local_timestamp,ant,sig_len,rx_state,real_time_set,real_timestamp,len,CSI_DATA
+I (1025) wifi:new:<6,1>, old:<1,0>, ap:<255,255>, sta:<6,1>, prof:1
+I (2225) wifi:state: init -> auth (b0)
+I (2229) wifi:state: auth -> assoc (0)
+[0;32mI (2232) Active CSI collection (Station): Other event id:7[0m
+[0;32mI (2234) main_task: Returned from app_main()[0m
+wifi not connected. waiting...
+[0;31mE (2236) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2245) transport_base: Failed to open a new connection: 32772[0m
+CSI_DATA,STA,C8:F0:9E:F3:25:A9,-59,11,0,0,0,0,0,0,0,0,0,-96,0,6,1,1233455,0,131,0,0,1.67219,128,[-125 48 8 0 0 0 0 0 0 0 0 0 -14 1 -14 0 -15 0 -16 0 -16 -1 -16 -1 -17 -1 -17 -2 -18 -2 -18 -2 -19 -2 -19 -3 -20 -3 -19 -3 -18 -4 -21 -4 -20 -5 -20 -5 -19 -5 -20 -5 -20 -5 -21 -6 -19 -5 -21 -5 -22 -5 -22 -5 0 0 -22 -5 -23 -5 -22 -4 -22 -4 -21 -4 -22 -5 -23 -4 -22 -5 -23 -4 -23 -4 -25 -4 -23 -4 -24 -3 -24 -4 -25 -4 -25 -4 -26 -3 -25 -3 -25 -4 -25 -3 -26 -4 -27 -4 -26 -3 -27 -3 -26 -2 -26 -2 0 0 0 0 0 0 0 0 0 0 ]
+[0;31mE (2251) mqtt_client: Error transport connect[0m
+[0;32mI (2301) Active CSI collection (Station): MQTT_EVENT_ERROR[0m
+CSI_DATA,STA,C8:F0:9E:F3:25:A9,-59,11,0,0,0,0,0,0,0,0,0,-96,0,6,1,1236629,0,135,0,0,1.7288,128,[-121 112 8 0 0 0 0 0 0 0 0 0 -2 13 -2 13 -3 14 -3 15 -3 15 -4 15 -4 16 -6 15 -5 16 -6 16 -6 17 -6 17 -7 18 -6 17 -7 17 -7 19 -7 17 -7 17 -8 18 -8 18 -9 18 -8 18 -8 17 -8 19 -8 20 -9 19 0 0 -8 19 -9 21 -8 21 -8 21 -7 20 -8 21 -8 21 -8 21 -7 21 -7 20 -7 23 -7 21 -6 22 -7 22 -7 23 -7 23 -6 25 -7 24 -7 24 -7 23 -7 24 -7 24 -6 24 -6 26 -5 24 -6 24 0 0 0 0 0 0 0 0 0 0 ]
+[0;31mE (2306) Active CSI collection (Station): Last error reported from esp-tls: 0x8004[0m
+[0;32mI (2355) Active CSI collection (Station): Last errno string (Success)[0m
+I (2356) wifi:[0;32mI (2362) Active CSI collection (Station): MQTT_EVENT_DISCONNECTED[0m
+state: assoc -> run (10)
+wifi not connected. waiting...
+CSI_DATA,STA,C8:F0:9E:F3:25:A9,-59,11,0,0,0,0,0,0,0,0,0,-96,0,6,1,2231668,0,135,0,0,2.67001,128,[-121 112 8 0 0 0 0 0 0 0 0 0 -8 -11 -8 -12 -9 -13 -9 -13 -9 -14 -8 -14 -8 -15 -7 -15 -9 -16 -7 -18 -8 -18 -8 -18 -7 -19 -8 -18 -7 -18 -8 -20 -7 -18 -7 -19 -7 -18 -7 -20 -7 -20 -8 -20 -6 -20 -7 -21 -8 -21 -7 -21 0 0 -8 -20 -9 -22 -9 -21 -10 -22 -9 -20 -10 -21 -10 -21 -9 -22 -11 -21 -9 -22 -10 -23 -10 -21 -11 -22 -10 -21 -12 -23 -11 -22 -13 -24 -11 -22 -12 -23 -12 -23 -12 -24 -12 -23 -12 -24 -13 -25 -12 -23 -12 -23 0 0 0 0 0 0 0 0 0 0 ]
+wifi not connected. waiting...
+CSI_DATA,STA,C8:F0:9E:F3:25:A9,-59,11,0,0,0,0,0,0,0,0,0,-96,0,6,1,3232516,0,135,0,0,3.67067,128,[-121 112 8 0 0 0 0 0 0 0 0 0 12 -3 13 -3 14 -3 14 -3 15 -2 15 -2 16 -2 16 -1 18 -1 17 0 19 -1 18 0 19 0 19 0 18 1 21 0 19 1 19 1 19 1 20 1 19 1 20 2 19 1 21 1 21 1 21 2 0 0 21 1 22 1 22 1 22 0 21 0 23 0 23 0 22 0 23 0 23 0 24 0 22 0 23 -1 23 0 24 -1 25 0 26 -1 24 -1 25 0 25 -1 25 -1 25 -2 25 -2 26 -2 25 -2 25 -2 0 0 0 0 0 0 0 0 0 0 ]
+wifi not connected. waiting...
+CSI_DATA,STA,C8:F0:9E:F3:25:A9,-59,11,0,0,0,0,0,0,0,0,0,-96,0,6,1,4234512,0,135,0,0,4.67271,128,[-121 112 8 0 0 0 0 0 0 0 0 0 -11 -9 -11 -9 -12 -10 -12 -11 -12 -12 -12 -12 -13 -12 -11 -12 -13 -13 -12 -14 -13 -15 -12 -16 -13 -16 -13 -15 -12 -15 -14 -16 -13 -16 -13 -16 -12 -16 -13 -17 -13 -17 -13 -17 -12 -17 -13 -18 -14 -19 -13 -18 0 0 -14 -17 -15 -18 -15 -18 -15 -17 -14 -17 -16 -18 -16 -18 -15 -18 -17 -17 -16 -18 -16 -19 -15 -18 -16 -17 -16 -18 -17 -19 -17 -19 -19 -19 -18 -18 -18 -18 -18 -18 -19 -19 -18 -18 -19 -19 -19 -20 -18 -18 -19 -19 0 0 0 0 0 0 0 0 0 0 ]
+I (5287) wifi:state: run -> init (fc0)
+I (5290) wifi:new:<6,0>, old:<6,1>, ap:<255,255>, sta:<6,1>, prof:1
+[0;32mI (5298) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+wifi not connected. waiting...
+[0;32mI (7715) Active CSI collection (Station): Retry connecting to the AP[0m
+I (7725) wifi:new:<6,1>, old:<6,0>, ap:<255,255>, sta:<6,1>, prof:1
+I (7727) wifi:state: init -> auth (b0)
+I (7733) wifi:state: auth -> assoc (0)
+CSI_DATA,STA,C8:F0:9E:F3:25:A9,-51,11,0,0,0,0,0,0,0,0,0,-96,0,6,1,6728892,0,131,0,0,7.17219,128,[-125 48 8 0 0 0 0 0 0 0 0 -7 4 -25 4 -25 5 -25 6 -25 7 -24 8 -23 8 -22 9 -22 9 -22 9 -22 9 -22 9 -22 9 -22 9 -21 9 -21 10 -21 10 -20 9 -19 9 -19 9 -19 9 -19 9 -18 8 -18 8 -19 7 -19 7 -19 3 -10 7 -18 7 -19 7 -19 6 -18 5 -18 5 -18 5 -18 5 -18 4 -18 4 -18 3 -18 3 -18 3 -18 3 -19 3 -19 3 -19 2 -19 2 -19 2 -19 1 -19 1 -19 1 -19 0 -19 0 -19 -1 -19 -1 -18 -1 -5 0 0 0 0 0 0 0 0 ]
+CSI_DATA,STA,C8:F0:9E:F3:25:A9,-51,11,0,0,0,0,0,0,0,0,0,-96,0,6,1,6729353,0,135,0,0,7.20512,128,[-121 112 8 0 0 0 0 0 0 0 1 -6 6 -24 6 -24 7 -24 8 -24 8 -23 9 -22 10 -21 11 -21 11 -21 10 -22 10 -22 10 -22 11 -21 10 -20 11 -20 11 -20 11 -19 11 -18 10 -18 11 -17 11 -17 10 -17 10 -17 9 -18 9 -18 9 -18 4 -9 8 -17 8 -18 8 -18 7 -17 6 -17 7 -17 7 -17 6 -17 5 -18 5 -18 5 -18 4 -18 4 -18 4 -18 4 -18 4 -18 3 -18 3 -18 3 -18 3 -18 3 -18 2 -19 2 -19 1 -19 1 -18 1 -18 0 -5 0 0 0 0 0 0 0 0 ]
+I (7820) wifi:state: assoc -> run (10)
+wifi not connected. waiting...
+CSI_DATA,STA,C8:F0:9E:F3:25:A9,-48,11,0,0,0,0,0,0,0,0,0,-96,0,6,1,7729300,0,135,0,0,8.17242,128,[-121 112 8 0 0 0 0 0 0 0 4 4 15 18 15 18 15 19 15 19 13 20 12 20 11 20 11 20 11 20 10 21 10 21 10 21 10 21 9 20 9 20 10 20 9 19 9 18 9 18 8 18 8 18 8 18 8 17 9 18 9 18 9 18 5 8 10 17 11 17 11 16 11 16 11 15 11 15 11 15 12 15 12 15 12 15 12 15 13 15 13 14 13 14 14 14 14 14 15 14 15 14 14 14 15 14 15 14 15 13 16 13 16 13 16 13 16 13 4 3 0 0 0 0 0 0 0 0 ]
+wifi not connected. waiting...
+CSI_DATA,STA,C8:F0:9E:F3:25:A9,-47,11,0,0,0,0,0,0,0,0,0,-96,0,6,1,8728497,0,135,0,0,9.17146,128,[-121 112 8 0 0 0 0 0 0 0 5 3 22 14 21 15 21 16 21 17 20 17 19 17 18 18 17 18 17 18 17 18 17 19 17 19 17 19 16 18 15 18 15 19 15 18 14 17 14 17 13 17 14 17 14 16 14 16 14 16 15 16 15 16 7 7 15 15 15 15 15 15 15 14 15 13 15 13 15 13 15 12 16 12 16 12 16 12 16 11 17 11 17 11 17 11 18 11 18 11 18 10 18 10 18 10 18 10 19 9 19 9 19 9 19 8 19 8 4 2 0 0 0 0 0 0 0 0 ]
+wifi not connected. waiting...
+CSI_DATA,STA,C8:F0:9E:F3:25:A9,-50,11,0,0,0,0,0,0,0,0,0,-96,0,6,1,9729136,0,135,0,0,10.1721,128,[-121 112 8 0 0 0 0 0 0 0 6 -2 25 -6 25 -5 26 -5 26 -5 26 -4 25 -2 25 -1 25 -1 25 -1 25 0 25 1 25 1 25 1 23 1 23 1 23 1 22 1 22 1 21 1 21 1 21 1 21 0 20 0 20 0 20 0 20 0 9 -1 19 -1 19 -2 19 -3 18 -3 18 -3 18 -3 18 -3 17 -4 17 -4 17 -4 17 -4 17 -4 16 -5 16 -5 16 -6 17 -7 16 -7 16 -7 15 -7 15 -7 15 -8 15 -8 15 -8 15 -9 14 -9 14 -9 3 -3 0 0 0 0 0 0 0 0 ]
+I (10776) wifi:state: run -> init (fc0)
+I (10779) wifi:new:<6,0>, old:<6,1>, ap:<255,255>, sta:<6,1>, prof:1
+[0;32mI (10786) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+wifi not connected. waiting...
+[0;32mI (12370) Active CSI collection (Station): Other event id:7[0m
+[0;31mE (12373) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (12374) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (12379) mqtt_client: Error transport connect[0m
+[0;32mI (12384) Active CSI collection (Station): MQTT_EVENT_ERROR[0m
+[0;31mE (12390) Active CSI collection (Station): Last error reported from esp-tls: 0x8004[0m
+[0;32mI (12399) Active CSI collection (Station): Last errno string (Success)[0m
+[0;32mI (12406) Active CSI collection (Station): MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (13205) Active CSI collection (Station): Retry connecting to the AP[0m
+I (13214) wifi:new:<6,1>, old:<6,0>, ap:<255,255>, sta:<6,1>, prof:1
+I (13216) wifi:state: init -> auth (b0)
+I (13220) wifi:state: auth -> assoc (0)
+CSI_DATA,STA,C8:F0:9E:F3:25:A9,-51,11,0,0,0,0,0,0,0,0,0,-96,0,6,1,12215494,0,131,0,0,12.6623,128,[-125 48 8 0 0 0 0 0 0 0 -1 5 -3 21 -4 22 -4 22 -5 22 -6 21 -6 21 -7 21 -7 20 -8 20 -8 20 -8 20 -8 20 -8 20 -8 19 -9 19 -9 19 -9 18 -8 17 -8 17 -8 17 -8 17 -8 17 -8 16 -7 17 -7 17 -7 17 -4 8 -6 17 -6 17 -6 17 -5 16 -5 16 -5 16 -5 16 -5 16 -4 16 -4 16 -4 16 -3 17 -3 17 -3 17 -3 17 -3 17 -2 17 -2 17 -2 17 -2 17 -2 17 -1 17 -1 17 0 17 0 17 0 17 0 4 0 0 0 0 0 0 0 0 ]
+wifi not connected. waiting...
+CSI_DATA,STA,C8:F0:9E:F3:25:A9,-51,11,0,0,0,0,0,0,0,0,0,-96,0,6,1,12216537,0,135,0,0,12.6972,128,[-121 112 8 0 0 0 0 0 0 0 4 2 18 12 18 12 18 13 18 13 17 14 16 14 15 14 15 15 15 15 15 15 15 15 15 16 14 16 14 15 14 15 13 16 13 15 12 14 12 14 12 14 12 14 12 14 12 13 12 13 13 13 13 13 6 6 13 13 13 13 13 12 13 11 13 11 13 11 13 10 13 10 13 10 13 10 13 10 14 9 14 9 14 9 14 9 15 9 15 8 15 8 15 8 15 7 15 7 15 7 15 7 15 6 15 6 15 6 3 1 0 0 0 0 0 0 0 0 ]
+I (13309) wifi:state: assoc -> run (10)
+CSI_DATA,STA,C8:F0:9E:F3:25:A9,-51,11,0,0,0,0,0,0,0,0,0,-96,0,6,1,13215808,0,135,0,0,13.6625,128,[-121 112 8 0 0 0 0 0 0 0 4 2 19 10 19 10 19 11 19 11 18 12 17 13 16 13 16 14 16 14 16 14 16 14 16 15 15 14 14 14 14 14 14 14 14 14 13 13 13 13 13 13 13 13 13 13 12 13 13 13 13 13 13 13 6 6 13 11 14 11 14 11 14 10 14 10 14 10 14 10 13 9 14 9 14 9 14 9 14 8 14 8 14 8 15 7 15 7 15 7 15 7 15 7 15 7 15 7 15 6 16 6 16 6 15 5 15 5 3 1 0 0 0 0 0 0 0 0 ]
+wifi not connected. waiting...
+CSI_DATA,STA,C8:F0:9E:F3:25:A9,-50,11,0,0,0,0,0,0,0,0,0,-96,0,6,1,14213265,0,135,0,0,14.6598,128,[-121 112 8 0 0 0 0 0 0 0 -4 6 -15 24 -15 24 -16 24 -17 23 -18 22 -18 21 -18 20 -19 20 -19 20 -19 19 -19 20 -19 20 -19 19 -19 19 -19 18 -20 18 -20 17 -19 16 -18 16 -18 16 -18 16 -18 15 -17 15 -17 16 -16 17 -16 17 -8 8 -16 16 -16 17 -15 17 -14 16 -14 16 -13 16 -13 16 -13 16 -12 17 -12 17 -12 17 -11 18 -11 18 -11 18 -11 18 -11 18 -10 18 -10 18 -10 18 -9 18 -9 19 -9 19 -8 19 -7 19 -7 19 -7 19 -2 4 0 0 0 0 0 0 0 0 ]
+wifi not connected. waiting...
+CSI_DATA,STA,C8:F0:9E:F3:25:A9,-51,11,0,0,0,0,0,0,0,0,0,-96,0,6,1,15217025,0,135,0,0,15.6635,128,[-121 112 8 0 0 0 0 0 0 0 5 -3 20 -9 20 -9 21 -9 21 -9 21 -8 21 -6 21 -6 21 -5 21 -5 21 -4 22 -3 22 -3 21 -3 20 -3 20 -3 20 -4 20 -4 19 -4 19 -3 18 -3 18 -3 18 -3 18 -3 18 -3 18 -3 18 -3 8 -2 17 -4 17 -5 17 -6 16 -6 16 -6 16 -6 16 -6 16 -6 15 -7 16 -7 16 -6 15 -7 15 -7 15 -8 15 -8 15 -9 15 -9 15 -9 14 -9 14 -9 14 -10 14 -10 14 -10 14 -10 14 -10 13 -10 3 -3 0 0 0 0 0 0 0 0 ]
+I (16269) wifi:state: run -> init (fc0)
+wifi not connected. waiting...
+I (16272) wifi:new:<6,0>, old:<6,1>, ap:<255,255>, sta:<6,1>, prof:1
+[0;32mI (16283) Active CSI collection (Station): Retry connecting to the AP[0m
+wifi not connected. waiting...
+wifi not connected. waiting...
+[0;32mI (18700) Active CSI collection (Station): Retry connecting to the AP[0m
+I (18710) wifi:new:<6,1>, old:<6,0>, ap:<255,255>, sta:<6,1>, prof:1
+I (18712) wifi:state: init -> auth (b0)

@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/root/esp/esp-idf/examples/ESP32-CSI-Tool/active_sta_mqtt/build/CMakeFiles/bootloader
+/root/esp/esp-idf/examples/ESP32-CSI-Tool/active_sta_mqtt/build/CMakeFiles/bootloader.rule
+/root/esp/esp-idf/examples/ESP32-CSI-Tool/active_sta_mqtt/build/CMakeFiles/bootloader-complete.rule
+/root/esp/esp-idf/examples/ESP32-CSI-Tool/active_sta_mqtt/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/root/esp/esp-idf/examples/ESP32-CSI-Tool/active_sta_mqtt/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/root/esp/esp-idf/examples/ESP32-CSI-Tool/active_sta_mqtt/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/root/esp/esp-idf/examples/ESP32-CSI-Tool/active_sta_mqtt/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/root/esp/esp-idf/examples/ESP32-CSI-Tool/active_sta_mqtt/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/root/esp/esp-idf/examples/ESP32-CSI-Tool/active_sta_mqtt/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/root/esp/esp-idf/examples/ESP32-CSI-Tool/active_sta_mqtt/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

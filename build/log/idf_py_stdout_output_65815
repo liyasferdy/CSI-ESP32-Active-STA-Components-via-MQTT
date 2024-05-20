@@ -1,0 +1,94 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /root/esp/esp-idf/examples/ESP32-CSI-Tool/active_sta_mqtt/build/bootloader/esp-idf/esptool_py && /home/liyas_ferdy/.espressif/python_env/idf5.1_py3.10_env/bin/python /root/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /root/esp/esp-idf/examples/ESP32-CSI-Tool/active_sta_mqtt/build/bootloader/bootloader.bin
+Bootloader binary size 0x6820 bytes. 0x7e0 bytes (7%) free.
+[2/8] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/main.cc.obj
+In file included from /root/esp/esp-idf/examples/ESP32-CSI-Tool/active_sta_mqtt/main/main.cc:8:
+/root/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h:6:2: warning: #warning esp_spi_flash.h is deprecated, please use spi_flash_mmap.h instead [-Wcpp]
+    6 | #warning esp_spi_flash.h is deprecated, please use spi_flash_mmap.h instead
+      |  ^~~~~~~
+[3/8] Linking C static library esp-idf/main/libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable active-sta-mqtt.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 25 ELF sections
+Successfully created esp32 image.
+Generated /root/esp/esp-idf/examples/ESP32-CSI-Tool/active_sta_mqtt/build/active-sta-mqtt.bin
+[7/8] cd /root/esp/esp-idf/examples/ESP32-CSI-Tool/active_sta_mqtt/build/esp-idf/esptool_py && /home/liyas_ferdy/.espressif/python_env/idf5.1_py3.10_env/bin/python /root/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /root/esp/esp-idf/examples/ESP32-CSI-Tool/active_sta_mqtt/build/partition_table/partition-table.bin /root/esp/esp-idf/examples/ESP32-CSI-Tool/active_sta_mqtt/build/active-sta-mqtt.bin
+active-sta-mqtt.bin binary size 0x11a920 bytes. Smallest app partition is 0x177000 bytes. 0x5c6e0 bytes (25%) free.
+[7/8] cd /root/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/root/esp/esp-idf -D "SERIAL_TOOL=/home/liyas_ferdy/.espressif/python_env/idf5.1_py3.10_env/bin/python;;/root/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/root/esp/esp-idf/examples/ESP32-CSI-Tool/active_sta_mqtt/build -P /root/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 active-sta-mqtt.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port /dev/ttyUSB0
+Connecting....
+Chip is ESP32-D0WDQ6 (revision v1.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 24:62:ab:dc:46:24
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x0012afff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26656 bytes to 16698...
+Writing at 0x00001000... (50 %)
+Writing at 0x00007692... (100 %)
+Wrote 26656 bytes (16698 compressed) at 0x00001000 in 0.9 seconds (effective 246.0 kbit/s)...
+Hash of data verified.
+Compressed 1157408 bytes to 687039...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001c416... (4 %)
+Writing at 0x00025e1a... (7 %)
+Writing at 0x0002b618... (9 %)
+Writing at 0x000344bb... (11 %)
+Writing at 0x0004742d... (14 %)
+Writing at 0x00051665... (16 %)
+Writing at 0x0005717d... (19 %)
+Writing at 0x0005cafe... (21 %)
+Writing at 0x000624a7... (23 %)
+Writing at 0x00067c03... (26 %)
+Writing at 0x0006d4e5... (28 %)
+Writing at 0x00072c22... (30 %)
+Writing at 0x00078528... (33 %)
+Writing at 0x0007e359... (35 %)
+Writing at 0x00083d20... (38 %)
+Writing at 0x00089c9a... (40 %)
+Writing at 0x0008f85c... (42 %)
+Writing at 0x000955d0... (45 %)
+Writing at 0x0009abfc... (47 %)
+Writing at 0x0009fe61... (50 %)
+Writing at 0x000a53ce... (52 %)
+Writing at 0x000aa5af... (54 %)
+Writing at 0x000afd58... (57 %)
+Writing at 0x000b543c... (59 %)
+Writing at 0x000bab2c... (61 %)
+Writing at 0x000c05d0... (64 %)
+Writing at 0x000c5db9... (66 %)
+Writing at 0x000cb9c1... (69 %)
+Writing at 0x000d2bb7... (71 %)
+Writing at 0x000da5e5... (73 %)
+Writing at 0x000e1ee6... (76 %)
+Writing at 0x000eaa4a... (78 %)
+Writing at 0x000f0132... (80 %)
+Writing at 0x000f587a... (83 %)
+Writing at 0x000fc3c9... (85 %)
+Writing at 0x001041c5... (88 %)
+Writing at 0x0010cfdc... (90 %)
+Writing at 0x00114715... (92 %)
+Writing at 0x0011a54e... (95 %)
+Writing at 0x0011ff7e... (97 %)
+Writing at 0x001257ac... (100 %)
+Wrote 1157408 bytes (687039 compressed) at 0x00010000 in 16.2 seconds (effective 569.8 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 105...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (105 compressed) at 0x00008000 in 0.1 seconds (effective 340.7 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
